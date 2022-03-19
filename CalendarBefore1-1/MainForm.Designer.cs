@@ -31,86 +31,59 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.currentTimeLbl = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.minuteTimer = new System.Windows.Forms.Timer(this.components);
-            this.etaloneEventChBox = new System.Windows.Forms.CheckBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.centerMarkV1 = new System.Windows.Forms.Label();
             this.centerMarkV2 = new System.Windows.Forms.Label();
             this.centerMarkH1 = new System.Windows.Forms.Label();
             this.centerMarkH2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.centerMarkC = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.dateLbl = new System.Windows.Forms.Label();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.eventsTable = new System.Windows.Forms.TableLayoutPanel();
             this.deleteEventBtn = new System.Windows.Forms.Button();
+            this.BtnsImgList = new System.Windows.Forms.ImageList(this.components);
             this.addEventBtn = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.chooseDateBtn = new System.Windows.Forms.Button();
+            this.todayLbl = new System.Windows.Forms.Label();
+            this.monthLLbl = new System.Windows.Forms.LinkLabel();
+            this.yearLLbl = new System.Windows.Forms.LinkLabel();
+            this.cerpPicBox = new System.Windows.Forms.PictureBox();
+            this.hammerPicBox = new System.Windows.Forms.PictureBox();
+            this.countDownTable = new System.Windows.Forms.TableLayoutPanel();
+            this.countDownControl1 = new CalendarBefore1_1.CountDownControl();
+            this.etaloneEventChBox = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId3 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId2 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId1 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId7 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId8 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId9 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId4 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId5 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId6 = new CalendarBefore1_1.CheckboxWithId();
             this.eventsTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerpPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hammerPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // currentTimeLbl
             // 
             this.currentTimeLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.currentTimeLbl.AutoSize = true;
             this.currentTimeLbl.BackColor = System.Drawing.Color.Transparent;
             this.currentTimeLbl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.currentTimeLbl.ForeColor = System.Drawing.Color.White;
-            this.currentTimeLbl.Location = new System.Drawing.Point(616, 32);
+            this.currentTimeLbl.Location = new System.Drawing.Point(600, 32);
             this.currentTimeLbl.Name = "currentTimeLbl";
-            this.currentTimeLbl.Size = new System.Drawing.Size(158, 72);
+            this.currentTimeLbl.Size = new System.Drawing.Size(188, 72);
             this.currentTimeLbl.TabIndex = 0;
-            this.currentTimeLbl.Text = "10:00";
+            this.currentTimeLbl.Text = "33:33";
             this.currentTimeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "hh:mm";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(992, 496);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(340, 20);
-            this.dateTimePicker1.TabIndex = 1;
             // 
             // minuteTimer
             // 
             this.minuteTimer.Interval = 10000;
             this.minuteTimer.Tick += new System.EventHandler(this.minuteTimer_Tick);
-            // 
-            // etaloneEventChBox
-            // 
-            this.etaloneEventChBox.AutoSize = true;
-            this.etaloneEventChBox.BackColor = System.Drawing.Color.Transparent;
-            this.etaloneEventChBox.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.etaloneEventChBox.Location = new System.Drawing.Point(968, 544);
-            this.etaloneEventChBox.Name = "etaloneEventChBox";
-            this.etaloneEventChBox.Size = new System.Drawing.Size(103, 29);
-            this.etaloneEventChBox.TabIndex = 2;
-            this.etaloneEventChBox.Text = "checkBox1";
-            this.etaloneEventChBox.UseVisualStyleBackColor = false;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
-            this.monthCalendar1.Location = new System.Drawing.Point(224, 472);
-            this.monthCalendar1.MaxSelectionCount = 1;
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.ShowWeekNumbers = true;
-            this.monthCalendar1.TabIndex = 3;
             // 
             // centerMarkV1
             // 
@@ -191,83 +164,10 @@
             this.centerMarkC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.centerMarkC.Visible = false;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.AutoScroll = true;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.checkBox1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox7, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox8, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox9, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox10, 0, 5);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(448, 848);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(472, 184);
-            this.tableLayoutPanel2.TabIndex = 5;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(3, 26);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(80, 17);
-            this.checkBox7.TabIndex = 2;
-            this.checkBox7.Text = "checkBox1";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(3, 49);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(80, 17);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "checkBox1";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(3, 72);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(80, 17);
-            this.checkBox9.TabIndex = 2;
-            this.checkBox9.Text = "checkBox1";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(3, 95);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(80, 17);
-            this.checkBox10.TabIndex = 2;
-            this.checkBox10.Text = "checkBox1";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
             // dateLbl
             // 
             this.dateLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateLbl.AutoSize = true;
             this.dateLbl.BackColor = System.Drawing.Color.Transparent;
             this.dateLbl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateLbl.ForeColor = System.Drawing.Color.White;
@@ -278,151 +178,357 @@
             this.dateLbl.Text = "33 декабря 3333";
             this.dateLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox11.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox11.Location = new System.Drawing.Point(3, 73);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(103, 29);
-            this.checkBox11.TabIndex = 2;
-            this.checkBox11.Text = "checkBox1";
-            this.checkBox11.UseVisualStyleBackColor = false;
-            this.checkBox11.Visible = false;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox12.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox12.Location = new System.Drawing.Point(3, 38);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(103, 29);
-            this.checkBox12.TabIndex = 2;
-            this.checkBox12.Text = "checkBox1";
-            this.checkBox12.UseVisualStyleBackColor = false;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox13.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox13.Location = new System.Drawing.Point(3, 3);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(103, 29);
-            this.checkBox13.TabIndex = 2;
-            this.checkBox13.Text = "checkBox1";
-            this.checkBox13.UseVisualStyleBackColor = false;
-            // 
             // eventsTable
             // 
             this.eventsTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.eventsTable.AutoScroll = true;
+            this.eventsTable.AutoScrollMinSize = new System.Drawing.Size(1, 1);
             this.eventsTable.BackColor = System.Drawing.Color.Transparent;
             this.eventsTable.ColumnCount = 1;
             this.eventsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.eventsTable.Controls.Add(this.checkBox13, 0, 0);
-            this.eventsTable.Controls.Add(this.checkBox12, 0, 1);
-            this.eventsTable.Controls.Add(this.checkBox11, 0, 2);
-            this.eventsTable.Location = new System.Drawing.Point(448, 488);
+            this.eventsTable.Controls.Add(this.checkboxWithId3, 0, 2);
+            this.eventsTable.Controls.Add(this.checkboxWithId2, 0, 1);
+            this.eventsTable.Controls.Add(this.checkboxWithId1, 0, 0);
+            this.eventsTable.Location = new System.Drawing.Point(464, 480);
             this.eventsTable.Name = "eventsTable";
             this.eventsTable.RowCount = 3;
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.eventsTable.Size = new System.Drawing.Size(472, 160);
+            this.eventsTable.Size = new System.Drawing.Size(456, 160);
             this.eventsTable.TabIndex = 5;
+            this.eventsTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
             // 
             // deleteEventBtn
             // 
             this.deleteEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteEventBtn.AutoSize = true;
             this.deleteEventBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.deleteEventBtn.BackColor = System.Drawing.Color.Transparent;
+            this.deleteEventBtn.FlatAppearance.BorderSize = 0;
+            this.deleteEventBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.deleteEventBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.deleteEventBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteEventBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteEventBtn.ImageIndex = 0;
+            this.deleteEventBtn.ImageList = this.BtnsImgList;
             this.deleteEventBtn.Location = new System.Drawing.Point(976, 664);
             this.deleteEventBtn.Name = "deleteEventBtn";
-            this.deleteEventBtn.Size = new System.Drawing.Size(232, 37);
+            this.deleteEventBtn.Size = new System.Drawing.Size(244, 37);
             this.deleteEventBtn.TabIndex = 8;
-            this.deleteEventBtn.Text = "—  Удалить дату для отсчета";
-            this.deleteEventBtn.UseVisualStyleBackColor = true;
+            this.deleteEventBtn.Text = "        Удалить дату для отсчета";
+            this.deleteEventBtn.UseVisualStyleBackColor = false;
+            this.deleteEventBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseDown);
+            this.deleteEventBtn.MouseLeave += new System.EventHandler(this.chooseDateBtn_MouseLeave);
+            this.deleteEventBtn.MouseHover += new System.EventHandler(this.chooseDateBtn_MouseHover);
+            this.deleteEventBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseUp);
+            // 
+            // BtnsImgList
+            // 
+            this.BtnsImgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("BtnsImgList.ImageStream")));
+            this.BtnsImgList.TransparentColor = System.Drawing.Color.Transparent;
+            this.BtnsImgList.Images.SetKeyName(0, "button-back-1.png");
+            this.BtnsImgList.Images.SetKeyName(1, "button-back-howered.png");
+            this.BtnsImgList.Images.SetKeyName(2, "button-back-clicked.png");
             // 
             // addEventBtn
             // 
             this.addEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addEventBtn.AutoSize = true;
             this.addEventBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addEventBtn.BackColor = System.Drawing.Color.Transparent;
+            this.addEventBtn.FlatAppearance.BorderSize = 0;
+            this.addEventBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addEventBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.addEventBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEventBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addEventBtn.Location = new System.Drawing.Point(576, 664);
+            this.addEventBtn.ImageIndex = 0;
+            this.addEventBtn.ImageList = this.BtnsImgList;
+            this.addEventBtn.Location = new System.Drawing.Point(568, 664);
             this.addEventBtn.Name = "addEventBtn";
-            this.addEventBtn.Size = new System.Drawing.Size(233, 37);
+            this.addEventBtn.Size = new System.Drawing.Size(248, 37);
             this.addEventBtn.TabIndex = 8;
-            this.addEventBtn.Text = "+  Добавить дату для отсчета";
-            this.addEventBtn.UseVisualStyleBackColor = true;
+            this.addEventBtn.Text = "        Добавить событие";
+            this.addEventBtn.UseVisualStyleBackColor = false;
+            this.addEventBtn.Click += new System.EventHandler(this.addEventBtn_Click);
+            this.addEventBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseDown);
+            this.addEventBtn.MouseLeave += new System.EventHandler(this.chooseDateBtn_MouseLeave);
+            this.addEventBtn.MouseHover += new System.EventHandler(this.chooseDateBtn_MouseHover);
+            this.addEventBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseUp);
             // 
-            // button4
+            // chooseDateBtn
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.chooseDateBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(184, 664);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 37);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "+  Удалить дату для отсчета";
-            this.button4.UseVisualStyleBackColor = true;
+            this.chooseDateBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.chooseDateBtn.BackColor = System.Drawing.Color.Transparent;
+            this.chooseDateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chooseDateBtn.FlatAppearance.BorderSize = 0;
+            this.chooseDateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chooseDateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.chooseDateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chooseDateBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chooseDateBtn.ImageIndex = 0;
+            this.chooseDateBtn.ImageList = this.BtnsImgList;
+            this.chooseDateBtn.Location = new System.Drawing.Point(184, 664);
+            this.chooseDateBtn.Name = "chooseDateBtn";
+            this.chooseDateBtn.Size = new System.Drawing.Size(244, 40);
+            this.chooseDateBtn.TabIndex = 8;
+            this.chooseDateBtn.Text = "        Выбрать дату для отсчета";
+            this.chooseDateBtn.UseVisualStyleBackColor = true;
+            this.chooseDateBtn.Click += new System.EventHandler(this.chooseDateBtn_Click);
+            this.chooseDateBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseDown);
+            this.chooseDateBtn.MouseLeave += new System.EventHandler(this.chooseDateBtn_MouseLeave);
+            this.chooseDateBtn.MouseHover += new System.EventHandler(this.chooseDateBtn_MouseHover);
+            this.chooseDateBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseUp);
             // 
-            // label1
+            // todayLbl
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.todayLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(536, 312);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 81);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "СЕГОДНЯ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.todayLbl.AutoSize = true;
+            this.todayLbl.BackColor = System.Drawing.Color.Transparent;
+            this.todayLbl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.todayLbl.ForeColor = System.Drawing.Color.White;
+            this.todayLbl.Location = new System.Drawing.Point(536, 312);
+            this.todayLbl.Name = "todayLbl";
+            this.todayLbl.Size = new System.Drawing.Size(326, 81);
+            this.todayLbl.TabIndex = 0;
+            this.todayLbl.Text = "СЕГОДНЯ";
+            this.todayLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // monthLLbl
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(928, 336);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 39);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "ГОД";
+            this.monthLLbl.AutoSize = true;
+            this.monthLLbl.BackColor = System.Drawing.Color.Transparent;
+            this.monthLLbl.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.monthLLbl.Font = new System.Drawing.Font("Bahnschrift", 24F);
+            this.monthLLbl.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.monthLLbl.LinkColor = System.Drawing.Color.Silver;
+            this.monthLLbl.Location = new System.Drawing.Point(352, 336);
+            this.monthLLbl.Name = "monthLLbl";
+            this.monthLLbl.Size = new System.Drawing.Size(124, 39);
+            this.monthLLbl.TabIndex = 11;
+            this.monthLLbl.TabStop = true;
+            this.monthLLbl.Text = "МЕСЯЦ";
+            this.monthLLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.monthLLbl.Click += new System.EventHandler(this.monthLbl_Click);
             // 
-            // label4
+            // yearLLbl
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(360, 336);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 39);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "МЕСЯЦ";
+            this.yearLLbl.AutoSize = true;
+            this.yearLLbl.BackColor = System.Drawing.Color.Transparent;
+            this.yearLLbl.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.yearLLbl.Font = new System.Drawing.Font("Bahnschrift", 24F);
+            this.yearLLbl.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.yearLLbl.LinkColor = System.Drawing.Color.Silver;
+            this.yearLLbl.Location = new System.Drawing.Point(936, 336);
+            this.yearLLbl.Name = "yearLLbl";
+            this.yearLLbl.Size = new System.Drawing.Size(76, 39);
+            this.yearLLbl.TabIndex = 11;
+            this.yearLLbl.TabStop = true;
+            this.yearLLbl.Text = "ГОД";
+            this.yearLLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yearLLbl.Click += new System.EventHandler(this.monthLbl_Click);
+            // 
+            // cerpPicBox
+            // 
+            this.cerpPicBox.BackColor = System.Drawing.Color.Transparent;
+            this.cerpPicBox.Image = global::CalendarBefore1_1.Properties.Resources.cerp;
+            this.cerpPicBox.Location = new System.Drawing.Point(480, 8);
+            this.cerpPicBox.Name = "cerpPicBox";
+            this.cerpPicBox.Size = new System.Drawing.Size(96, 104);
+            this.cerpPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cerpPicBox.TabIndex = 12;
+            this.cerpPicBox.TabStop = false;
+            // 
+            // hammerPicBox
+            // 
+            this.hammerPicBox.BackColor = System.Drawing.Color.Transparent;
+            this.hammerPicBox.Image = global::CalendarBefore1_1.Properties.Resources.hammer;
+            this.hammerPicBox.Location = new System.Drawing.Point(800, 8);
+            this.hammerPicBox.Name = "hammerPicBox";
+            this.hammerPicBox.Size = new System.Drawing.Size(96, 104);
+            this.hammerPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hammerPicBox.TabIndex = 12;
+            this.hammerPicBox.TabStop = false;
+            // 
+            // countDownTable
+            // 
+            this.countDownTable.AutoScroll = true;
+            this.countDownTable.BackColor = System.Drawing.Color.Transparent;
+            this.countDownTable.ColumnCount = 1;
+            this.countDownTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 696F));
+            this.countDownTable.Location = new System.Drawing.Point(344, 136);
+            this.countDownTable.Name = "countDownTable";
+            this.countDownTable.RowCount = 1;
+            this.countDownTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.countDownTable.Size = new System.Drawing.Size(696, 160);
+            this.countDownTable.TabIndex = 5;
+            this.countDownTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
+            // 
+            // countDownControl1
+            // 
+            this.countDownControl1.AutoSize = true;
+            this.countDownControl1.BackColor = System.Drawing.Color.Transparent;
+            this.countDownControl1.CountDownText = "countDown1";
+            this.countDownControl1.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.countDownControl1.Location = new System.Drawing.Point(1112, 472);
+            this.countDownControl1.Name = "countDownControl1";
+            this.countDownControl1.Size = new System.Drawing.Size(215, 48);
+            this.countDownControl1.TabIndex = 13;
+            this.countDownControl1.Visible = false;
+            // 
+            // etaloneEventChBox
+            // 
+            this.etaloneEventChBox.AutoSize = true;
+            this.etaloneEventChBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.etaloneEventChBox.BackColor = System.Drawing.Color.Transparent;
+            this.etaloneEventChBox.CheckBoxChecked = false;
+            this.etaloneEventChBox.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.etaloneEventChBox.CheckBoxText = "checkBox1";
+            this.etaloneEventChBox.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.etaloneEventChBox.Location = new System.Drawing.Point(1128, 536);
+            this.etaloneEventChBox.MaximumSize = new System.Drawing.Size(469, 0);
+            this.etaloneEventChBox.Name = "etaloneEventChBox";
+            this.etaloneEventChBox.Size = new System.Drawing.Size(163, 38);
+            this.etaloneEventChBox.TabIndex = 10;
+            this.etaloneEventChBox.Visible = false;
+            // 
+            // checkboxWithId3
+            // 
+            this.checkboxWithId3.AutoSize = true;
+            this.checkboxWithId3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId3.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId3.CheckBoxChecked = false;
+            this.checkboxWithId3.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId3.CheckBoxText = "checkBox1";
+            this.checkboxWithId3.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId3.Location = new System.Drawing.Point(3, 91);
+            this.checkboxWithId3.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId3.Name = "checkboxWithId3";
+            this.checkboxWithId3.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId3.TabIndex = 10;
+            // 
+            // checkboxWithId2
+            // 
+            this.checkboxWithId2.AutoSize = true;
+            this.checkboxWithId2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId2.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId2.CheckBoxChecked = false;
+            this.checkboxWithId2.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId2.CheckBoxText = "checkBox1";
+            this.checkboxWithId2.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId2.Location = new System.Drawing.Point(3, 47);
+            this.checkboxWithId2.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId2.Name = "checkboxWithId2";
+            this.checkboxWithId2.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId2.TabIndex = 10;
+            // 
+            // checkboxWithId1
+            // 
+            this.checkboxWithId1.AutoSize = true;
+            this.checkboxWithId1.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.checkboxWithId1.CheckBoxChecked = false;
+            this.checkboxWithId1.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId1.CheckBoxText = "checkBox1";
+            this.checkboxWithId1.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId1.Location = new System.Drawing.Point(3, 3);
+            this.checkboxWithId1.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId1.Name = "checkboxWithId1";
+            this.checkboxWithId1.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId1.TabIndex = 10;
+            // 
+            // checkboxWithId7
+            // 
+            this.checkboxWithId7.AutoSize = true;
+            this.checkboxWithId7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId7.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId7.CheckBoxChecked = false;
+            this.checkboxWithId7.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId7.CheckBoxText = "checkBox1";
+            this.checkboxWithId7.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId7.Location = new System.Drawing.Point(3, 91);
+            this.checkboxWithId7.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId7.Name = "checkboxWithId7";
+            this.checkboxWithId7.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId7.TabIndex = 10;
+            // 
+            // checkboxWithId8
+            // 
+            this.checkboxWithId8.AutoSize = true;
+            this.checkboxWithId8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId8.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId8.CheckBoxChecked = false;
+            this.checkboxWithId8.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId8.CheckBoxText = "checkBox1";
+            this.checkboxWithId8.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId8.Location = new System.Drawing.Point(3, 47);
+            this.checkboxWithId8.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId8.Name = "checkboxWithId8";
+            this.checkboxWithId8.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId8.TabIndex = 10;
+            // 
+            // checkboxWithId9
+            // 
+            this.checkboxWithId9.AutoSize = true;
+            this.checkboxWithId9.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.checkboxWithId9.CheckBoxChecked = false;
+            this.checkboxWithId9.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId9.CheckBoxText = "checkBox1";
+            this.checkboxWithId9.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId9.Location = new System.Drawing.Point(3, 3);
+            this.checkboxWithId9.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId9.Name = "checkboxWithId9";
+            this.checkboxWithId9.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId9.TabIndex = 10;
+            // 
+            // checkboxWithId4
+            // 
+            this.checkboxWithId4.AutoSize = true;
+            this.checkboxWithId4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId4.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId4.CheckBoxChecked = false;
+            this.checkboxWithId4.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId4.CheckBoxText = "checkBox1";
+            this.checkboxWithId4.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId4.Location = new System.Drawing.Point(3, 91);
+            this.checkboxWithId4.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId4.Name = "checkboxWithId4";
+            this.checkboxWithId4.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId4.TabIndex = 10;
+            // 
+            // checkboxWithId5
+            // 
+            this.checkboxWithId5.AutoSize = true;
+            this.checkboxWithId5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId5.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId5.CheckBoxChecked = false;
+            this.checkboxWithId5.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId5.CheckBoxText = "checkBox1";
+            this.checkboxWithId5.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId5.Location = new System.Drawing.Point(3, 47);
+            this.checkboxWithId5.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId5.Name = "checkboxWithId5";
+            this.checkboxWithId5.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId5.TabIndex = 10;
+            // 
+            // checkboxWithId6
+            // 
+            this.checkboxWithId6.AutoSize = true;
+            this.checkboxWithId6.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.checkboxWithId6.CheckBoxChecked = false;
+            this.checkboxWithId6.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId6.CheckBoxText = "checkBox1";
+            this.checkboxWithId6.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId6.Location = new System.Drawing.Point(3, 3);
+            this.checkboxWithId6.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId6.Name = "checkboxWithId6";
+            this.checkboxWithId6.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId6.TabIndex = 10;
             // 
             // MainForm
             // 
@@ -430,12 +536,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::CalendarBefore1_1.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.countDownControl1);
+            this.Controls.Add(this.hammerPicBox);
+            this.Controls.Add(this.cerpPicBox);
+            this.Controls.Add(this.yearLLbl);
+            this.Controls.Add(this.monthLLbl);
+            this.Controls.Add(this.etaloneEventChBox);
+            this.Controls.Add(this.chooseDateBtn);
             this.Controls.Add(this.addEventBtn);
             this.Controls.Add(this.deleteEventBtn);
             this.Controls.Add(this.centerMarkH2);
@@ -444,14 +554,12 @@
             this.Controls.Add(this.centerMarkV2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.centerMarkV1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.todayLbl);
             this.Controls.Add(this.dateLbl);
             this.Controls.Add(this.currentTimeLbl);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.etaloneEventChBox);
+            this.Controls.Add(this.countDownTable);
             this.Controls.Add(this.eventsTable);
-            this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
@@ -459,11 +567,12 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Календарь до";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.eventsTable.ResumeLayout(false);
             this.eventsTable.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cerpPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hammerPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,32 +581,35 @@
         #endregion
 
         private System.Windows.Forms.Label currentTimeLbl;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Timer minuteTimer;
-        private System.Windows.Forms.CheckBox etaloneEventChBox;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label centerMarkV1;
         private System.Windows.Forms.Label centerMarkV2;
         private System.Windows.Forms.Label centerMarkH1;
         private System.Windows.Forms.Label centerMarkH2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label centerMarkC;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.Label dateLbl;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
         private System.Windows.Forms.TableLayoutPanel eventsTable;
         private System.Windows.Forms.Button deleteEventBtn;
         private System.Windows.Forms.Button addEventBtn;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button chooseDateBtn;
+        private System.Windows.Forms.Label todayLbl;
+        private CheckboxWithId etaloneEventChBox;
+        private CheckboxWithId checkboxWithId3;
+        private CheckboxWithId checkboxWithId2;
+        private CheckboxWithId checkboxWithId1;
+        private System.Windows.Forms.LinkLabel monthLLbl;
+        private System.Windows.Forms.LinkLabel yearLLbl;
+        private System.Windows.Forms.ImageList BtnsImgList;
+        private System.Windows.Forms.PictureBox cerpPicBox;
+        private System.Windows.Forms.PictureBox hammerPicBox;
+        private CheckboxWithId checkboxWithId4;
+        private CheckboxWithId checkboxWithId5;
+        private CheckboxWithId checkboxWithId6;
+        private CheckboxWithId checkboxWithId7;
+        private CheckboxWithId checkboxWithId8;
+        private CheckboxWithId checkboxWithId9;
+        private System.Windows.Forms.TableLayoutPanel countDownTable;
+        private CountDownControl countDownControl1;
     }
 }

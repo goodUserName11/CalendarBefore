@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,11 +47,15 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>icon_2WE_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,25 +69,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCountDownDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCountDownDialog.Designer.cs">
+      <DependentUpon>AddCountDownDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEventDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEventDialog.Designer.cs">
+      <DependentUpon>AddEventDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarDialogForm.Designer.cs">
+      <DependentUpon>CalendarDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckboxWithId.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckboxWithId.Designer.cs">
+      <DependentUpon>CheckboxWithId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountDownControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CountDownControl.Designer.cs">
+      <DependentUpon>CountDownControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountDownDate.cs" />
+    <Compile Include="CountDownDateList.cs" />
+    <Compile Include="DateTimeCustoms.cs" />
+    <Compile Include="EventsList.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MdiParentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MdiParentForm.Designer.cs">
-      <DependentUpon>MdiParentForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="MyEvent.cs" />
+    <Compile Include="MyTimeSpan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCountDownDialog.resx">
+      <DependentUpon>AddCountDownDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEventDialog.resx">
+      <DependentUpon>AddEventDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarDialogForm.resx">
+      <DependentUpon>CalendarDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckboxWithId.resx">
+      <DependentUpon>CheckboxWithId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDownControl.resx">
+      <DependentUpon>CountDownControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MdiParentForm.resx">
-      <DependentUpon>MdiParentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,7 +139,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +160,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon_2WE_icon.ico" />
+    <None Include="Resources\date-circle-white.png" />
+    <None Include="Resources\event-back-1.png" />
+    <None Include="Resources\button-back-1.png" />
+    <None Include="Resources\button-back-howered.png" />
+    <None Include="Resources\button-back-clicked.png" />
+    <None Include="Resources\hammer.png" />
+    <None Include="Resources\event-back.png" />
+    <None Include="Resources\date-circle.png" />
+    <None Include="Resources\cerp.png" />
+    <None Include="Resources\button-back.png" />
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
