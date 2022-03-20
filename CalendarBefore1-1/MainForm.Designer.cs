@@ -40,7 +40,7 @@
             this.centerMarkC = new System.Windows.Forms.Label();
             this.dateLbl = new System.Windows.Forms.Label();
             this.eventsTable = new System.Windows.Forms.TableLayoutPanel();
-            this.deleteEventBtn = new System.Windows.Forms.Button();
+            this.deleteCountDownBtn = new System.Windows.Forms.Button();
             this.BtnsImgList = new System.Windows.Forms.ImageList(this.components);
             this.addEventBtn = new System.Windows.Forms.Button();
             this.chooseDateBtn = new System.Windows.Forms.Button();
@@ -50,6 +50,7 @@
             this.cerpPicBox = new System.Windows.Forms.PictureBox();
             this.hammerPicBox = new System.Windows.Forms.PictureBox();
             this.countDownTable = new System.Windows.Forms.TableLayoutPanel();
+            this.todayLLbl = new System.Windows.Forms.LinkLabel();
             this.countDownControl1 = new CalendarBefore1_1.CountDownControl();
             this.etaloneEventChBox = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId3 = new CalendarBefore1_1.CheckboxWithId();
@@ -61,6 +62,7 @@
             this.checkboxWithId4 = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId5 = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId6 = new CalendarBefore1_1.CheckboxWithId();
+            this.BtnDeleteImgList = new System.Windows.Forms.ImageList(this.components);
             this.eventsTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerpPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hammerPicBox)).BeginInit();
@@ -182,7 +184,6 @@
             // 
             this.eventsTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.eventsTable.AutoScroll = true;
-            this.eventsTable.AutoScrollMinSize = new System.Drawing.Size(1, 1);
             this.eventsTable.BackColor = System.Drawing.Color.Transparent;
             this.eventsTable.ColumnCount = 1;
             this.eventsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -195,33 +196,34 @@
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.eventsTable.Size = new System.Drawing.Size(456, 160);
+            this.eventsTable.Size = new System.Drawing.Size(488, 160);
             this.eventsTable.TabIndex = 5;
             this.eventsTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
             // 
-            // deleteEventBtn
+            // deleteCountDownBtn
             // 
-            this.deleteEventBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.deleteCountDownBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteEventBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.deleteEventBtn.BackColor = System.Drawing.Color.Transparent;
-            this.deleteEventBtn.FlatAppearance.BorderSize = 0;
-            this.deleteEventBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.deleteEventBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.deleteEventBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteEventBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteEventBtn.ImageIndex = 0;
-            this.deleteEventBtn.ImageList = this.BtnsImgList;
-            this.deleteEventBtn.Location = new System.Drawing.Point(976, 664);
-            this.deleteEventBtn.Name = "deleteEventBtn";
-            this.deleteEventBtn.Size = new System.Drawing.Size(244, 37);
-            this.deleteEventBtn.TabIndex = 8;
-            this.deleteEventBtn.Text = "        Удалить дату для отсчета";
-            this.deleteEventBtn.UseVisualStyleBackColor = false;
-            this.deleteEventBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseDown);
-            this.deleteEventBtn.MouseLeave += new System.EventHandler(this.chooseDateBtn_MouseLeave);
-            this.deleteEventBtn.MouseHover += new System.EventHandler(this.chooseDateBtn_MouseHover);
-            this.deleteEventBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseUp);
+            this.deleteCountDownBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.deleteCountDownBtn.BackColor = System.Drawing.Color.Transparent;
+            this.deleteCountDownBtn.FlatAppearance.BorderSize = 0;
+            this.deleteCountDownBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.deleteCountDownBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.deleteCountDownBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteCountDownBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteCountDownBtn.ImageIndex = 0;
+            this.deleteCountDownBtn.ImageList = this.BtnDeleteImgList;
+            this.deleteCountDownBtn.Location = new System.Drawing.Point(968, 672);
+            this.deleteCountDownBtn.Name = "deleteCountDownBtn";
+            this.deleteCountDownBtn.Size = new System.Drawing.Size(264, 45);
+            this.deleteCountDownBtn.TabIndex = 8;
+            this.deleteCountDownBtn.Text = "        Удалить дату для отсчета";
+            this.deleteCountDownBtn.UseVisualStyleBackColor = false;
+            this.deleteCountDownBtn.Click += new System.EventHandler(this.deleteCountDownBtn_Click);
+            this.deleteCountDownBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseDown);
+            this.deleteCountDownBtn.MouseLeave += new System.EventHandler(this.chooseDateBtn_MouseLeave);
+            this.deleteCountDownBtn.MouseHover += new System.EventHandler(this.chooseDateBtn_MouseHover);
+            this.deleteCountDownBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chooseDateBtn_MouseUp);
             // 
             // BtnsImgList
             // 
@@ -244,9 +246,9 @@
             this.addEventBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.addEventBtn.ImageIndex = 0;
             this.addEventBtn.ImageList = this.BtnsImgList;
-            this.addEventBtn.Location = new System.Drawing.Point(568, 664);
+            this.addEventBtn.Location = new System.Drawing.Point(560, 664);
             this.addEventBtn.Name = "addEventBtn";
-            this.addEventBtn.Size = new System.Drawing.Size(248, 37);
+            this.addEventBtn.Size = new System.Drawing.Size(344, 61);
             this.addEventBtn.TabIndex = 8;
             this.addEventBtn.Text = "        Добавить событие";
             this.addEventBtn.UseVisualStyleBackColor = false;
@@ -270,9 +272,9 @@
             this.chooseDateBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.chooseDateBtn.ImageIndex = 0;
             this.chooseDateBtn.ImageList = this.BtnsImgList;
-            this.chooseDateBtn.Location = new System.Drawing.Point(184, 664);
+            this.chooseDateBtn.Location = new System.Drawing.Point(176, 656);
             this.chooseDateBtn.Name = "chooseDateBtn";
-            this.chooseDateBtn.Size = new System.Drawing.Size(244, 40);
+            this.chooseDateBtn.Size = new System.Drawing.Size(360, 72);
             this.chooseDateBtn.TabIndex = 8;
             this.chooseDateBtn.Text = "        Выбрать дату для отсчета";
             this.chooseDateBtn.UseVisualStyleBackColor = true;
@@ -366,6 +368,23 @@
             this.countDownTable.Size = new System.Drawing.Size(696, 160);
             this.countDownTable.TabIndex = 5;
             this.countDownTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
+            // 
+            // todayLLbl
+            // 
+            this.todayLLbl.AutoSize = true;
+            this.todayLLbl.BackColor = System.Drawing.Color.Transparent;
+            this.todayLLbl.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.todayLLbl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.todayLLbl.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.todayLLbl.LinkColor = System.Drawing.Color.Silver;
+            this.todayLLbl.Location = new System.Drawing.Point(536, 312);
+            this.todayLLbl.Name = "todayLLbl";
+            this.todayLLbl.Size = new System.Drawing.Size(326, 81);
+            this.todayLLbl.TabIndex = 11;
+            this.todayLLbl.TabStop = true;
+            this.todayLLbl.Text = "СЕГОДНЯ";
+            this.todayLLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.todayLLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.todayLLbl_LinkClicked);
             // 
             // countDownControl1
             // 
@@ -530,6 +549,14 @@
             this.checkboxWithId6.Size = new System.Drawing.Size(211, 38);
             this.checkboxWithId6.TabIndex = 10;
             // 
+            // BtnDeleteImgList
+            // 
+            this.BtnDeleteImgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("BtnDeleteImgList.ImageStream")));
+            this.BtnDeleteImgList.TransparentColor = System.Drawing.Color.Transparent;
+            this.BtnDeleteImgList.Images.SetKeyName(0, "button-back-minus.png");
+            this.BtnDeleteImgList.Images.SetKeyName(1, "button-back-minus-howered.png");
+            this.BtnDeleteImgList.Images.SetKeyName(2, "button-back-minus-clicked.png");
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,18 +574,19 @@
             this.Controls.Add(this.etaloneEventChBox);
             this.Controls.Add(this.chooseDateBtn);
             this.Controls.Add(this.addEventBtn);
-            this.Controls.Add(this.deleteEventBtn);
+            this.Controls.Add(this.deleteCountDownBtn);
             this.Controls.Add(this.centerMarkH2);
             this.Controls.Add(this.centerMarkH1);
             this.Controls.Add(this.centerMarkC);
             this.Controls.Add(this.centerMarkV2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.centerMarkV1);
-            this.Controls.Add(this.todayLbl);
             this.Controls.Add(this.dateLbl);
             this.Controls.Add(this.currentTimeLbl);
             this.Controls.Add(this.countDownTable);
             this.Controls.Add(this.eventsTable);
+            this.Controls.Add(this.todayLbl);
+            this.Controls.Add(this.todayLLbl);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -567,6 +595,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Календарь до";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.eventsTable.ResumeLayout(false);
@@ -590,7 +619,7 @@
         private System.Windows.Forms.Label centerMarkC;
         private System.Windows.Forms.Label dateLbl;
         private System.Windows.Forms.TableLayoutPanel eventsTable;
-        private System.Windows.Forms.Button deleteEventBtn;
+        private System.Windows.Forms.Button deleteCountDownBtn;
         private System.Windows.Forms.Button addEventBtn;
         private System.Windows.Forms.Button chooseDateBtn;
         private System.Windows.Forms.Label todayLbl;
@@ -611,5 +640,7 @@
         private CheckboxWithId checkboxWithId9;
         private System.Windows.Forms.TableLayoutPanel countDownTable;
         private CountDownControl countDownControl1;
+        private System.Windows.Forms.LinkLabel todayLLbl;
+        private System.Windows.Forms.ImageList BtnDeleteImgList;
     }
 }

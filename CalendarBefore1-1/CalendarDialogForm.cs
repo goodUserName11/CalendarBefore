@@ -65,5 +65,33 @@ namespace CalendarBefore1_1
 
             SelectedDate = SelectedDate.AddHours(_currentTime.Hour);
         }
+
+        private void addBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            var btn = (Button)sender;
+
+            btn.ImageIndex = 2;
+        }
+
+        private void addBtn_MouseEnter(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+
+            btn.ImageIndex = 1;
+        }
+
+        private void addBtn_MouseLeave(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+
+            btn.ImageIndex = 0;
+        }
+
+        private void addBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            var btn = (Button)sender;
+
+            btn.ImageIndex = 1;
+        }
     }
 }

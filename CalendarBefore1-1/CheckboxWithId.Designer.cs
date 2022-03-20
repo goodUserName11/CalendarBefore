@@ -75,20 +75,19 @@
             // deleteBtn
             // 
             this.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.deleteBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.deleteBtn.Dock = System.Windows.Forms.DockStyle.Left;
             this.deleteBtn.FlatAppearance.BorderSize = 0;
             this.deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteBtn.ForeColor = System.Drawing.Color.Red;
+            this.deleteBtn.ForeColor = System.Drawing.Color.Black;
             this.deleteBtn.ImageIndex = 0;
             this.deleteBtn.ImageList = this.deleteImgList;
-            this.deleteBtn.Location = new System.Drawing.Point(171, 0);
+            this.deleteBtn.Location = new System.Drawing.Point(0, 0);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(40, 38);
             this.deleteBtn.TabIndex = 5;
-            this.deleteBtn.Text = "X";
             this.deleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.deleteBtn_MouseDown);
@@ -100,9 +99,9 @@
             // 
             this.deleteImgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("deleteImgList.ImageStream")));
             this.deleteImgList.TransparentColor = System.Drawing.Color.Transparent;
-            this.deleteImgList.Images.SetKeyName(0, "date-circle-white.png");
-            this.deleteImgList.Images.SetKeyName(1, "date-circle-white.png");
-            this.deleteImgList.Images.SetKeyName(2, "date-circle.png");
+            this.deleteImgList.Images.SetKeyName(0, "date-circle-minus.png");
+            this.deleteImgList.Images.SetKeyName(1, "date-circle-minus-grey.png");
+            this.deleteImgList.Images.SetKeyName(2, "date-circle-minus-white.png");
             // 
             // CheckboxWithId
             // 

@@ -54,6 +54,10 @@
             this.okBtn.Text = "ок";
             this.okBtn.UseVisualStyleBackColor = false;
             this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
+            this.okBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.addBtn_MouseDown);
+            this.okBtn.MouseEnter += new System.EventHandler(this.addBtn_MouseEnter);
+            this.okBtn.MouseLeave += new System.EventHandler(this.addBtn_MouseLeave);
+            this.okBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.addBtn_MouseUp);
             // 
             // BtnsImgList
             // 
@@ -107,6 +111,10 @@
             this.cancelBtn.Text = "Отмена";
             this.cancelBtn.UseVisualStyleBackColor = false;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            this.cancelBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.addBtn_MouseDown);
+            this.cancelBtn.MouseEnter += new System.EventHandler(this.addBtn_MouseEnter);
+            this.cancelBtn.MouseLeave += new System.EventHandler(this.addBtn_MouseLeave);
+            this.cancelBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.addBtn_MouseUp);
             // 
             // CalendarDialogForm
             // 
