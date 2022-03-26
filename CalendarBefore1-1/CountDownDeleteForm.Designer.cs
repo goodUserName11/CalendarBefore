@@ -39,9 +39,7 @@
             // 
             // countDownInfoTable
             // 
-            this.countDownInfoTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.countDownInfoTable.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.countDownInfoTable.AutoScroll = true;
             this.countDownInfoTable.BackColor = System.Drawing.Color.Transparent;
             this.countDownInfoTable.ColumnCount = 1;
@@ -51,8 +49,8 @@
             this.countDownInfoTable.Name = "countDownInfoTable";
             this.countDownInfoTable.RowCount = 1;
             this.countDownInfoTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.countDownInfoTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 311F));
-            this.countDownInfoTable.Size = new System.Drawing.Size(416, 312);
+            this.countDownInfoTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 320F));
+            this.countDownInfoTable.Size = new System.Drawing.Size(424, 320);
             this.countDownInfoTable.TabIndex = 2;
             this.countDownInfoTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
             // 
@@ -101,7 +99,7 @@
             this.countDownInfoControl1.Size = new System.Drawing.Size(386, 42);
             this.countDownInfoControl1.TabIndex = 1;
             this.countDownInfoControl1.TextLblFont = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.countDownInfoControl1.TextLblText = "Текст отчсчета";
+            this.countDownInfoControl1.TextLblText = "Текст отсчета";
             // 
             // CountDownDeleteForm
             // 

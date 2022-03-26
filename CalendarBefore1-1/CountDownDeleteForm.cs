@@ -11,8 +11,8 @@ namespace CalendarBefore1_1
         {
             try
             {
-                ScrollbarOverrider.ShowScrollBar(countDownInfoTable.Handle, (int)ScrollbarOverrider.ScrollBarDirection.SB_VERT, true);
-                ScrollbarOverrider.ShowScrollBar(countDownInfoTable.Handle, (int)ScrollbarOverrider.ScrollBarDirection.SB_HORZ, false);
+                //ScrollbarOverrider.ShowScrollBar(countDownInfoTable.Handle, (int)ScrollbarOverrider.ScrollBarDirection.SB_VERT, true);
+                //ScrollbarOverrider.ShowScrollBar(countDownInfoTable.Handle, (int)ScrollbarOverrider.ScrollBarDirection.SB_HORZ, false);
             }
             catch (System.ComponentModel.Win32Exception e)
             {
@@ -48,20 +48,23 @@ namespace CalendarBefore1_1
             countDownInfoTable.Controls.Add(_tableHeader);
             countDownInfoTable.RowStyles[0].SizeType = SizeType.AutoSize;
 
-            var countDownList = _countDownList.CountDownList;
-
-            foreach (var item in countDownList)
+            if (_countDownList.CountDownList.Count > 0)
             {
-                var newCountDownInfo = new CountDownInfoControl()
-                {
-                    Id = item.Id,
-                    TextLblText = $"{item.Text}",
-                    DateLblText = item.Date.ToShortDateString(),
-                    AddHandlerDeleteLLblClick = countDownDelete_Click
-                };
+                var countDownList = _countDownList.CountDownList;
 
-                countDownInfoTable.Controls.Add(newCountDownInfo);
-                countDownInfoTable.RowStyles[1].SizeType = SizeType.AutoSize;
+                foreach (var item in countDownList)
+                {
+                    var newCountDownInfo = new CountDownInfoControl()
+                    {
+                        Id = item.Id,
+                        TextLblText = $"{item.Text}",
+                        DateLblText = item.Date.ToShortDateString(),
+                        AddHandlerDeleteLLblClick = countDownDelete_Click
+                    };
+
+                    countDownInfoTable.Controls.Add(newCountDownInfo);
+                    countDownInfoTable.RowStyles[1].SizeType = SizeType.AutoSize;
+                }
             }
         }
 

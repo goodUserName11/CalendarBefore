@@ -242,7 +242,7 @@ namespace CalendarBefore1_1
                 todayLbl.Enabled = CanChangeDay;
 
                 todayLLbl.Visible = !CanChangeDay;
-                todayLLbl.Visible = !CanChangeDay;
+                todayLLbl.Enabled = !CanChangeDay;
 
                 #region Event
                 eventsTable.Controls.Clear();
