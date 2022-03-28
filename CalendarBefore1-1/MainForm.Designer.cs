@@ -40,9 +40,6 @@
             this.centerMarkC = new System.Windows.Forms.Label();
             this.dateLbl = new System.Windows.Forms.Label();
             this.eventsTable = new System.Windows.Forms.TableLayoutPanel();
-            this.checkboxWithId3 = new CalendarBefore1_1.CheckboxWithId();
-            this.checkboxWithId2 = new CalendarBefore1_1.CheckboxWithId();
-            this.checkboxWithId1 = new CalendarBefore1_1.CheckboxWithId();
             this.deleteCountDownBtn = new System.Windows.Forms.Button();
             this.BtnDeleteImgList = new System.Windows.Forms.ImageList(this.components);
             this.BtnsImgList = new System.Windows.Forms.ImageList(this.components);
@@ -57,6 +54,9 @@
             this.todayLLbl = new System.Windows.Forms.LinkLabel();
             this.countDownControl1 = new CalendarBefore1_1.CountDownControl();
             this.etaloneEventChBox = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId3 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId2 = new CalendarBefore1_1.CheckboxWithId();
+            this.checkboxWithId1 = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId7 = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId8 = new CalendarBefore1_1.CheckboxWithId();
             this.checkboxWithId9 = new CalendarBefore1_1.CheckboxWithId();
@@ -189,60 +189,15 @@
             this.eventsTable.Controls.Add(this.checkboxWithId3, 0, 2);
             this.eventsTable.Controls.Add(this.checkboxWithId2, 0, 1);
             this.eventsTable.Controls.Add(this.checkboxWithId1, 0, 0);
-            this.eventsTable.Location = new System.Drawing.Point(464, 488);
+            this.eventsTable.Location = new System.Drawing.Point(448, 488);
             this.eventsTable.Name = "eventsTable";
             this.eventsTable.RowCount = 3;
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.eventsTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.eventsTable.Size = new System.Drawing.Size(488, 160);
+            this.eventsTable.Size = new System.Drawing.Size(592, 160);
             this.eventsTable.TabIndex = 5;
             this.eventsTable.Scroll += new System.Windows.Forms.ScrollEventHandler(this.eventsTable_Scroll);
-            // 
-            // checkboxWithId3
-            // 
-            this.checkboxWithId3.AutoSize = true;
-            this.checkboxWithId3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.checkboxWithId3.BackColor = System.Drawing.Color.Transparent;
-            this.checkboxWithId3.CheckBoxChecked = false;
-            this.checkboxWithId3.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkboxWithId3.CheckBoxText = "checkBox1";
-            this.checkboxWithId3.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
-            this.checkboxWithId3.Location = new System.Drawing.Point(3, 91);
-            this.checkboxWithId3.MaximumSize = new System.Drawing.Size(469, 0);
-            this.checkboxWithId3.Name = "checkboxWithId3";
-            this.checkboxWithId3.Size = new System.Drawing.Size(211, 38);
-            this.checkboxWithId3.TabIndex = 10;
-            // 
-            // checkboxWithId2
-            // 
-            this.checkboxWithId2.AutoSize = true;
-            this.checkboxWithId2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.checkboxWithId2.BackColor = System.Drawing.Color.Transparent;
-            this.checkboxWithId2.CheckBoxChecked = false;
-            this.checkboxWithId2.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkboxWithId2.CheckBoxText = "checkBox1";
-            this.checkboxWithId2.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
-            this.checkboxWithId2.Location = new System.Drawing.Point(3, 47);
-            this.checkboxWithId2.MaximumSize = new System.Drawing.Size(469, 0);
-            this.checkboxWithId2.Name = "checkboxWithId2";
-            this.checkboxWithId2.Size = new System.Drawing.Size(211, 38);
-            this.checkboxWithId2.TabIndex = 10;
-            // 
-            // checkboxWithId1
-            // 
-            this.checkboxWithId1.AutoSize = true;
-            this.checkboxWithId1.BackColor = System.Drawing.Color.Transparent;
-            this.checkboxWithId1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.checkboxWithId1.CheckBoxChecked = false;
-            this.checkboxWithId1.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkboxWithId1.CheckBoxText = "checkBox1";
-            this.checkboxWithId1.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
-            this.checkboxWithId1.Location = new System.Drawing.Point(3, 3);
-            this.checkboxWithId1.MaximumSize = new System.Drawing.Size(469, 0);
-            this.checkboxWithId1.Name = "checkboxWithId1";
-            this.checkboxWithId1.Size = new System.Drawing.Size(211, 38);
-            this.checkboxWithId1.TabIndex = 10;
             // 
             // deleteCountDownBtn
             // 
@@ -469,6 +424,51 @@
             this.etaloneEventChBox.Size = new System.Drawing.Size(163, 38);
             this.etaloneEventChBox.TabIndex = 10;
             this.etaloneEventChBox.Visible = false;
+            // 
+            // checkboxWithId3
+            // 
+            this.checkboxWithId3.AutoSize = true;
+            this.checkboxWithId3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId3.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId3.CheckBoxChecked = false;
+            this.checkboxWithId3.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId3.CheckBoxText = "checkBox1";
+            this.checkboxWithId3.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId3.Location = new System.Drawing.Point(3, 91);
+            this.checkboxWithId3.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId3.Name = "checkboxWithId3";
+            this.checkboxWithId3.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId3.TabIndex = 10;
+            // 
+            // checkboxWithId2
+            // 
+            this.checkboxWithId2.AutoSize = true;
+            this.checkboxWithId2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.checkboxWithId2.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId2.CheckBoxChecked = false;
+            this.checkboxWithId2.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId2.CheckBoxText = "checkBox1";
+            this.checkboxWithId2.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId2.Location = new System.Drawing.Point(3, 47);
+            this.checkboxWithId2.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId2.Name = "checkboxWithId2";
+            this.checkboxWithId2.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId2.TabIndex = 10;
+            // 
+            // checkboxWithId1
+            // 
+            this.checkboxWithId1.AutoSize = true;
+            this.checkboxWithId1.BackColor = System.Drawing.Color.Transparent;
+            this.checkboxWithId1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.checkboxWithId1.CheckBoxChecked = false;
+            this.checkboxWithId1.CheckBoxFontStyle = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkboxWithId1.CheckBoxText = "checkBox1";
+            this.checkboxWithId1.Id = new System.Guid("00000000-0000-0000-0000-000000000000");
+            this.checkboxWithId1.Location = new System.Drawing.Point(3, 3);
+            this.checkboxWithId1.MaximumSize = new System.Drawing.Size(469, 0);
+            this.checkboxWithId1.Name = "checkboxWithId1";
+            this.checkboxWithId1.Size = new System.Drawing.Size(211, 38);
+            this.checkboxWithId1.TabIndex = 10;
             // 
             // checkboxWithId7
             // 

@@ -480,6 +480,47 @@ namespace CalendarBefore1_1
 
             todayLLbl.Visible = !CanChangeDay;
             todayLLbl.Visible = !CanChangeDay;
+
+            #region Event
+            eventsTable.Controls.Clear();
+
+            var eventList =
+                _eventsList.EventList.
+                 Where(myEvent => myEvent.Date.Date == _displayDate.Date).ToList();
+
+            foreach (var item in eventList)
+            {
+                var newCBox = new CheckboxWithId()
+                {
+                    Id = item.Id,
+                    CheckBoxText = item.Text,
+                };
+
+                newCBox.deleteBtn.Click += deleteEventBtn_Click;
+
+                eventsTable.Controls.Add(newCBox);
+            }
+            #endregion
+
+            #region CountDown
+            countDownTable.Controls.Clear();
+
+            var countDownList = _countDownList.CountDownList;
+
+            foreach (var item in countDownList)
+            {
+                var newCountDown = new CountDownControl()
+                {
+                    Id = item.Id,
+                    CountDownText =
+                    $"До {item.Text}: {item.TillCurrentDateRemained(_displayDate)}",
+                };
+
+                countDownTable.Controls.Add(newCountDown);
+                countDownTable.RowStyles[0].SizeType = SizeType.AutoSize;
+                newCountDown.Anchor = AnchorStyles.Top;
+            }
+            #endregion
         }
     }
 }
